@@ -1,0 +1,242 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #8c8c8c;
+  --color-lightgrey: #d0d0d0;
+
+  --color-neutral: #d8dfe2;
+  --color-lightblue: #71adb5;
+  --color-blue: #176d81;
+  --color-darkblue: #0d3446;
+
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('../images/brickwall_@2X.png'); /* Pattern by Benjamin Ward @ Toptal.com */
+}
+
+/* Base Styles */
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.site-section {
+  padding: 5rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.btn {
+  color: var(--color-white);
+  background-color: var(--color-lightblue);
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+  border: 0.3rem solid transparent;
+}
+
+.btn:hover {
+  border: 0.3rem solid var(--color-darkblue);
+}
+
+/* Navigation Section */
+
+.navigator {
+ background-color: var(--color-darkblue);
+ width: 100%;
+ position: fixed;
+}
+
+.navigator-nav {
+  margin: 0 auto;
+  width: 80%;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 0 2rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-lightblue);
+}
+
+/* Header Section */
+
+.site-header {
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/site-banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  color: var(--color-white);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-header {
+  font-size: 7.2rem;
+}
+
+.sub-header {
+  font-size: 2rem;
+}
+
+.header-btn {
+  margin: 2rem 0;
+}
+
+/* Services Section */
+
+.services-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30rem 30rem;
+  grid-gap: 5rem;
+}
+
+.offers {
+  background-color: var(--color-lightgrey);
+  padding: 2rem;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.offers h3 {
+  font-size: 3rem;
+}
+
+.offers .list-item {
+  font-size: 1.6rem;
+}
+
+/* About Section */
+
+.about-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.owner-image {
+  width: 70rem;
+}
+
+figure {
+  justify-self: center;
+}
+
+figcaption {
+  font-size: 1.4rem;
+}
+
+.about-description-container {
+  font-size: 2rem;
+  padding: 2rem;
+  min-width: 30rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+  .navigator-nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  /* Services Section */
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30rem 30rem 30rem;
+    grid-gap: 3rem;
+  }
+
+  /* About Section */
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-description-container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+  }
+
+  /* About Section */
+
+  .owner-image {
+    width: 50rem;
+  }
+
+  .about-description-container {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .site-header {
+    min-height: 100vh;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+  }
+}
