@@ -12,15 +12,18 @@
   </head>
   <body>
     <nav class="navigator">
-      <ul class="navigator-nav flex">
-        <li class="list-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="list-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="list-item"><a class="nav-link" href="#about">About Us</a></li>
-        <li class="list-item"><a class="nav-link" href="#">Contact Us</a></li>
-        <li class="list-item"><a class="nav-link" href="#">Location</a></li>
-      </ul>
+      <div class="navigator-container flex" id="navigator-container">
+        <button id="nav-btn" class="nav-btn"><i class="fas fa-bars"></i></button>
+        <ul class="navigator-nav flex" id="navigator-nav">
+          <li class="list-item"><a class="nav-link" id="home-btn" href="#">Home</a></li>
+          <li class="list-item"><a class="nav-link" id="services-btn" href="#services">Services</a></li>
+          <li class="list-item"><a class="nav-link" id="about-btn" href="#about">About Us</a></li>
+          <li class="list-item"><a class="nav-link" id="contact-us-btn" href="#">Contact Us</a></li>
+          <li class="list-item"><a class="nav-link" id="location-btn" href="#">Location</a></li>
+        </ul>
+      </div>
     </nav>
-    <header class="site-header flex">
+    <header class="site-header flex" id="site-header">
       <h1 class="main-header">Masters of Unlocking</h1>
       <p class="sub-header">We get the job done, when no one else can</p>
       <a class="btn header-btn" href="#services">What we offer</a>
@@ -118,6 +121,10 @@
       <section class="contact site-section" id="contact">
         <h2 class="section-header">Contact Us</h2>
       </section>
+      <section class="location site-section" id="location">
+        <h2 class="section-header">Location</h2>
+      </section>
     </main>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
