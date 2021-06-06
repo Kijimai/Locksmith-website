@@ -13,6 +13,7 @@
   <body>
     <nav class="navigator">
       <div class="navigator-container flex" id="navigator-container">
+        <a clas="nav-link" href="/index.html"><img class="site-logo" src="resources/images/MoL-logo.png" alt="site-logo"></a>
         <button id="nav-btn" class="nav-btn"><i class="fas fa-bars"></i></button>
         <ul class="navigator-nav flex" id="navigator-nav">
           <li class="list-item"><a class="nav-link" id="home-btn" href="#">Home</a></li>
@@ -86,7 +87,6 @@
               <li class="list-item">Gatelocks</li>
               <li class="list-item">Mailbox Locks</li>
               <li class="list-item">Secure Doors & Windows</li>
-              <li class="list-item"></li>
               <li class="list-item">Continuous Hinges</li>
             </ul>
           </div>
@@ -120,6 +120,30 @@
       </section>
       <section class="contact site-section" id="contact">
         <h2 class="section-header">Contact Us</h2>
+        <div class="form-container">
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <form
+          action="https://formspree.io/f/xnqldylj"
+          method="POST"
+        >
+          <label>
+            Your email:
+            <input type="email" name="_replyto">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
+          <div class="form-info-container">
+
+          </div>
+        </div>
       </section>
       <section class="location site-section" id="location">
         <h2 class="section-header">Location</h2>
