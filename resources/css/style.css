@@ -90,7 +90,6 @@ body {
 .navigator-container {
   margin: 0 auto;
   width: 80%;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--color-darkblue);
   height: 5rem;
@@ -126,10 +125,9 @@ body {
 
 .navigator-nav {
   position: absolute;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
+  right: 0;
   width: 80%;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
 }
@@ -233,6 +231,11 @@ figcaption {
 
 @media (max-width: 1200px) {
 
+  .nav-link {
+    font-size: 2rem;
+    padding: 0 1.2rem;
+  }
+
   /* Services Section */
 
   .services-grid {
@@ -258,6 +261,10 @@ figcaption {
     grid-template-rows: auto;
     grid-gap: 2rem;
   }
+
+  /* .list-item {
+    margin: 2rem 0;
+  } */
 
   /* About Section */
 
@@ -301,7 +308,7 @@ figcaption {
   }
 
   .list-item {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .nav-link {
