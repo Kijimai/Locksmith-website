@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(rgba(113, 173, 251, 0.5), rgba(113, 173, 251, 0.5)), url('../images/brickwall_@2X.png'); /* Pattern by Benjamin Ward @ Toptal.com */
+  background: url('../images/brickwall_@2X.png'); /* Pattern by Benjamin Ward @ Toptal.com */
 }
 
 /* Base Styles */
@@ -100,7 +100,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 5rem;
+  height: 4.5rem;
   z-index: 100;
 }
 
@@ -110,9 +110,8 @@ body {
   right: 0;
   display: none;
   background-color: transparent;
-  color: var(--color-lightblue);
+  color: var(--color-white);
   transition: color 0.3s ease;
-  margin-right: 5rem;
   margin-top: 1.5rem;
   border: none;
   cursor: pointer;
@@ -223,6 +222,18 @@ figcaption {
 
 /* Media Queries */
 
+@media (min-width: 1440px) {
+
+  .site-logo {
+    top: 0.5rem;
+    height: 6rem;
+  }
+
+  .navigator-container {
+    height: 7rem;
+  }
+}
+
 @media (max-width: 1440px) {
   .navigator-nav {
     width: 100%;
@@ -281,6 +292,11 @@ figcaption {
 
 @media (max-width: 768px) {
   
+  .site-logo {
+    height: 8rem;
+    top: 1rem;
+  }
+
   .navigator-container {
     height: 10rem;
     justify-content: flex-end;
@@ -318,9 +334,22 @@ figcaption {
   .site-header {
     min-height: 100vh;
   }
+  
+  .site-section {
+    width: 90%;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .about figure {
+    padding: 0 2rem;
+  }
 
   .owner-image {
-    max-width: 30rem;
+    max-height: 100%;
+    max-width: 100%;
   }
 
 }
@@ -340,7 +369,7 @@ figcaption {
   }
 
   .about-description-container {
-    max-width: 30rem;
+    max-width: 100%;
   }
 
 }
