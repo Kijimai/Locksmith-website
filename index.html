@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/style.css">
-    <title>Working Title - Masters of Unlocking</title>
+    <title>Masters of Unlocking</title>
   </head>
   <body>
     <nav class="navigator">
@@ -122,26 +122,16 @@
         <h2 class="section-header">Contact Us</h2>
         <div class="form-info-container">
             <h3>Free Quote</h3>
-            <p>Tell us about your needs and we can give you a free quote!</p>
+            <p>Tell us about what you need and we can give you a free quote!</p>
         </div>
         <div class="form-container">
         <!-- modify this form HTML and place wherever you want your form -->
-
-          <form
-            action="https://formspree.io/f/xnqldylj"
-            method="POST"
-          >
-            <label>
-              Your email:
-              <input type="email" name="_replyto">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-
+          <form class="contact-form" action="https://formspree.io/f/xnqldylj" method="POST">
+            <label for="email">Your email:</label>
+            <input id="email" type="email" name="_replyto">
+            <label for="messageText">Your message:</label>
+            <textarea id="messageText" name="message"></textarea>
             <!-- your other form fields go here -->
-
             <button type="submit">Send</button>
           </form>
         </div>

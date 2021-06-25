@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url('../images/brickwall_@2X.png'); /* Pattern by Benjamin Ward @ Toptal.com */
+  background: url('../images/brickwall_@2X.png') fixed; /* Pattern by Benjamin Ward @ Toptal.com */
 }
 
 /* Base Styles */
@@ -218,6 +218,43 @@ figcaption {
   font-size: 2rem;
   padding: 2rem;
   min-width: 30rem;
+}
+
+/* Contact Section */
+
+.contact {
+  font-size: 3rem;
+}
+
+.form-info-container,
+.form-container {
+  text-align: center;
+}
+
+.form-container {
+  
+}
+
+.contact-form {
+  display: inline-block;
+  background-color: var(--color-lightgrey);
+  padding: 3rem 6rem;
+}
+
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact input,
+.contact textarea {
+  border: 2px solid var(--color-lightblue);
+  background-color: var(--color-neutral);
+  padding: 2rem 4rem;
 }
 
 /* Media Queries */
