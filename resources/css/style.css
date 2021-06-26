@@ -73,6 +73,7 @@ body {
   padding: 1rem 2rem;
   transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
   border: 0.3rem solid transparent;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -218,6 +219,7 @@ figcaption {
   font-size: 2rem;
   padding: 2rem;
   min-width: 30rem;
+  line-height: 1.8;
 }
 
 /* Contact Section */
@@ -232,7 +234,7 @@ figcaption {
 }
 
 .form-container {
-  
+
 }
 
 .contact-form {
@@ -241,12 +243,13 @@ figcaption {
   padding: 3rem 6rem;
 }
 
-.contact label,
+.contact label {
+  text-align: left;
+}
+
 .contact input,
 .contact textarea,
 .contact button {
-  display: block;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -254,7 +257,18 @@ figcaption {
 .contact textarea {
   border: 2px solid var(--color-lightblue);
   background-color: var(--color-neutral);
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+.contact textarea {
+  height: 20rem;
+}
+
+.form-submit:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue);
 }
 
 /* Media Queries */

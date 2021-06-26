@@ -19,8 +19,8 @@
           <li class="list-item"><a class="nav-link" id="home-btn" href="#">Home</a></li>
           <li class="list-item"><a class="nav-link" id="services-btn" href="#services">Services</a></li>
           <li class="list-item"><a class="nav-link" id="about-btn" href="#about">About Us</a></li>
-          <li class="list-item"><a class="nav-link" id="contact-us-btn" href="#">Contact Us</a></li>
-          <li class="list-item"><a class="nav-link" id="location-btn" href="#">Location</a></li>
+          <li class="list-item"><a class="nav-link" id="contact-us-btn" href="#contact">Contact Us</a></li>
+          <li class="list-item"><a class="nav-link" id="location-btn" href="#location">Location</a></li>
         </ul>
       </div>
     </nav>
@@ -125,14 +125,16 @@
             <p>Tell us about what you need and we can give you a free quote!</p>
         </div>
         <div class="form-container">
-        <!-- modify this form HTML and place wherever you want your form -->
           <form class="contact-form" action="https://formspree.io/f/xnqldylj" method="POST">
-            <label for="email">Your email:</label>
-            <input id="email" type="email" name="_replyto">
-            <label for="messageText">Your message:</label>
-            <textarea id="messageText" name="message"></textarea>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <div class="form-group">
+              <label for="email">Your email:</label>
+              <input id="email" type="email" name="_replyto">
+            </div>
+            <div class="form-group">
+              <label for="messageText">Your message:</label>
+              <textarea id="messageText" name="message"></textarea>
+            </div>
+            <button class="btn form-submit" type="submit">Send</button>
           </form>
         </div>
       </section>
