@@ -7,7 +7,7 @@
   --color-neutral: #d8dfe2;
   --color-lightblue: #71adb5;
   --color-blue: #176d81;
-  --color-darkblue: #0d3446;
+  --color-darkblue: #0b648d;
 
   font-size: 10px;
 }
@@ -238,10 +238,6 @@ figcaption {
   margin: 5rem 0;
 }
 
-.form-container {
-
-}
-
 .contact-form {
   display: inline-block;
   background-color: var(--color-lightgrey);
@@ -317,17 +313,27 @@ figcaption {
   padding: 8rem 4rem;
 }
 
-.store-hours {
-  grid-template-columns: 1fr 1fr;
+.footer-menu {
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 2rem;
 }
 
-.store-hours ul {
+.footer-menu ul {
   list-style: none;
-  margin: 0 1rem;
 }
 
-.store-hours ul li {
+.footer-menu ul li {
+  line-height: 2;
+}
+
+.footer-navigator ul {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.footer-nav-link {
+  color: var(--color-white);
+  text-decoration: none;
   line-height: 2;
 }
 
@@ -465,7 +471,7 @@ figcaption {
   }
 
   .nav-link {
-    font-size: 5rem;
+    font-size: 4.8rem;
   }
 
   .site-header {
@@ -473,7 +479,7 @@ figcaption {
   }
   
   .site-section {
-    width: 90%;
+    width: 95%;
   }
 
   .about-container {
@@ -493,14 +499,31 @@ figcaption {
     padding: 3rem 2rem;
   }
 
-  /* .location-info {
-    align-items: center;
-  } */
-
   .location-content-container {
     grid-template-columns: 1fr;
   }
 
+  .inner-footer-container {
+    width: 95%;
+  }
+
+  .footer-menu {
+    font-size: 1.6rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .location {
+    width: 100%;
+  }
+
+  .inner-footer-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
