@@ -136,6 +136,7 @@ body {
   color: var(--color-white);
   text-decoration: none;
   font-size: 2.2rem;
+  font-weight: 600;
   padding: 0 2rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -226,26 +227,50 @@ figcaption {
 /* Contact Section */
 
 .contact {
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/handshake.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  color: var(--color-white);
+}
+
+.inner-contact-container {
+  width: 80%;
 }
 
 .form-info-container,
 .form-container {
-  text-align: center;
+  margin: 0 auto; 
 }
 
 .form-info-container {
-  margin: 5rem 0;
+  margin: auto 0;
+  margin-left: auto;
+  padding: 2rem;
+}
+
+.form-info-container ul {
+  margin: 2rem 0;
+  list-style: none;
+}
+
+.form-info-container .far {
+  color: rgb(61, 242, 61);
+  margin-right: 2rem;
 }
 
 .contact-form {
   display: inline-block;
-  background-color: var(--color-lightgrey);
+  background-color: rgba(208, 208, 208, 0.7);
   padding: 3rem 6rem;
 }
 
 .contact label {
   text-align: left;
+  color: var(--color-black);
 }
 
 .contact input,
@@ -300,7 +325,9 @@ figcaption {
 .footer {
   color: var(--color-white);
   min-height: 50vh;
-  background-color: var(--color-darkblue);
+  background: linear-gradient(to top, rgba(0, 24, 36, 0.9), rgba(11, 101, 142, 0.7)), url('../images/buildings.jpg');
+  background-position: center;
+  object-fit: cover;
   padding: 2rem 0;
 }
 
@@ -316,6 +343,7 @@ figcaption {
 .footer-menu {
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 2rem;
+  gap: 10rem;
 }
 
 .footer-menu ul {
@@ -370,6 +398,10 @@ figcaption {
   .navigator-nav {
     width: 100%;
   }
+
+  .form-info-container {
+    max-width: 50rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -397,6 +429,16 @@ figcaption {
     padding: 2rem;
   }
 
+  /* Contact Section */
+
+  .inner-contact-container {
+    flex-direction: column;
+  }
+
+  .form-info-container {
+    margin: 0 auto;
+  }
+
   /* Location Section */
 
   .location-info {
@@ -407,7 +449,9 @@ figcaption {
   .location-info div {
     margin: 2rem 0;
   }
+
 }
+
 
 @media (max-width: 992px) {
   .services-grid {
@@ -495,6 +539,19 @@ figcaption {
     max-width: 100%;
   }
 
+  .contact {
+    width: 100%;
+  }
+
+  .inner-contact-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .form-info-container {
+    font-size: 2.2rem;
+  }
+  
   .contact-form {
     padding: 3rem 2rem;
   }
