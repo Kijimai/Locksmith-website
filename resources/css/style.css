@@ -119,7 +119,8 @@ body {
   z-index: 100;
 }
 
-.fa-bars {
+.nav-btn .fa-bars,
+.nav-btn .fa-times {
   font-size: 7rem;
 }
 
@@ -145,12 +146,16 @@ body {
   color: var(--color-lightblue);
 }
 
+.navigator-nav .list-item:last-child .nav-link {
+  padding-right: 0;
+}
+
 /* Header Section */
 
 .site-header {
-  background: linear-gradient(to top,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/site-banner.jpg');
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../images/keymachine-sm.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: 40% center;
   height: 50vh;
   color: var(--color-white);
   justify-content: center;
@@ -224,6 +229,18 @@ figcaption {
   line-height: 1.8;
 }
 
+.owner-past-imgs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.old-img {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
 /* Contact Section */
 
 .contact {
@@ -250,6 +267,14 @@ figcaption {
   margin: auto 0;
   margin-left: auto;
   padding: 2rem;
+}
+
+.form-info-container h3 {
+  margin-bottom: 2rem;
+}
+
+.form-info-container p {
+  max-width: 60rem;
 }
 
 .form-info-container ul {
@@ -318,6 +343,14 @@ figcaption {
   color: var(--color-white);
   padding: 5rem;
   line-height: 1.8;
+}
+
+.location-info .fa-map-marker-alt {
+  color: rgb(250, 109, 58);
+}
+
+.location-info .fa-phone-alt {
+  color: rgb(233, 64, 64);
 }
 
 /* Footer Section */
@@ -603,7 +636,10 @@ figcaption {
 
   .contact-form {
     padding: 2rem;
+    font-size: 2.2rem;
   }
+
+
 
   .inner-footer-container {
     font-size: 1.6rem;

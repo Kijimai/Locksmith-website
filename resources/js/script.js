@@ -1,6 +1,7 @@
 const navigator = document.querySelector('#navigator-nav')
 const navigatorContainer = document.querySelector('#navigator-container')
 const navBtn = document.querySelector('#nav-btn')
+const navBtnIcon = document.querySelector('#nav-btn .fas')
 
 const homeBtn = document.querySelector('#home-btn')
 const servicesBtn = document.querySelector('#services-btn')
@@ -29,5 +30,15 @@ function removeActiveClass() {
 function toggleNav() {
   navigator.classList.toggle('active')
   navigatorContainer.classList.toggle('active')
+  changeNavBtnIcon()
 }
 
+function changeNavBtnIcon() {
+  if(navBtnIcon.classList.contains('fa-bars')) {
+    navBtnIcon.classList.remove('fa-bars')
+    navBtnIcon.classList.add('fa-times')
+  } else {
+    navBtnIcon.classList.remove('fa-times')
+    navBtnIcon.classList.add('fa-bars')
+  }
+}
